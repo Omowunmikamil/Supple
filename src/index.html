@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="./assets/S.svg" />
+    <title>Supple.</title>
+    <link href="./output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="h-screen">
+    <!-- Header -->
+    <header class="lg:w-[90%] w-[100%] mx-auto">
+      <nav
+        class="flex justify-between items-center px-6 lg:px-10 md:px-8 py-4 mb-20"
+      >
+        <div class="">
+          <img
+            src="./assets/Supple..svg"
+            alt="Supple"
+            class="w-[6rem] lg:w-[6.5rem] md:w-[7rem]"
+          />
+        </div>
+        <div
+          class="nav-links absolute lg:static lg:min-h-fit lg:bg-opacity-0 bg-n-11 bg-opacity-40 backdrop-blur-md backdrop-brightness-150 lg:backdrop-filter-none min-h-[64vh] left-0 top-[-100%] w-full lg:w-auto flex items-center px-6 pt-4 lg:pt-0 transition-all duration-300"
+        >
+          <ul
+            class="flex flex-col lg:flex-row md:flex-col lg:items-center lg:gap-[3vw] md:gap-6 gap-6"
+          >
+            <li>
+              <a href="#hero">Home</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#reviews">Reviews</a>
+            </li>
+            <li>
+              <a href="#video">Video</a>
+            </li>
+            <li>
+              <a href="#product">Products</a>
+            </li>
+            <li>
+              <a href="#faqs">Faqs</a>
+            </li>
+            <li>
+              <a href="#packages">Packages</a>
+            </li>
+            <li>
+              <a href="#contacts">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <ion-icon
+          onclick="onToggleMenu(this)"
+          name="menu"
+          class="text-3xl cursor-pointer hover:text-color-2 md:text-4xl lg:hidden"
+        ></ion-icon>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section
+      id="hero"
+      class="lg:w-[90%] sm:w-[100%] md:w-[100%] mx-auto mb-20 flex flex-col lg:justify-between items-center lg:flex-row md:flex-col px-6 md:px-8 lg:px-12 lg:py-8 md:mb-24"
+    >
+      <article
+        class="w-full lg:w-3/6 flex flex-col mb-8 md:mt-8 md:px-6 items-center"
+      >
+        <h1
+          class="text-3xl md:text-5xl lg:text-6xl font-syne font-bold md:font-extrabold lg:font-bold self-stretch leading-[2rem] lg:leading-[3.2rem] text-center"
+        >
+          Pre Workout Supplements.
+        </h1>
+        <p class="mt-3 lg:mt-3 md:text-xl lg:text-base">
+          Write here about your product short description.
+        </p>
+        <button
+          class="bg-color-2 text-xs md:text-lg lg:text-base text-n-10 py-4 px-8 md:px-10 my-5 rounded-full uppercase hover:bg-transparent hover:border-color-2 hover:border-4 hover:text-n-1 outline-none focus:ring-4 focus:outline-none active:bg-color-2 active:text-n-1"
+        >
+          Purchase
+        </button>
+      </article>
+      <img
+        src="./assets/pexels-suzy-hazelwood-25369651.png"
+        alt=""
+        class="w-full lg:w-3/6 lg:ml-6"
+      />
+    </section>
+
+    <section
+      class="bg-stroke-1 w-screen md:w-screen lg:w-screen lg:py-8 py-12 h-fit mb-20"
+    >
+      <section
+        class="lg:w-[90%] sm:w-[100%] md:w-[100%] mx-auto flex flex-col lg:flex-row md:flex-col justify-center lg:justify-between items-center px-6 lg:px-12 md-px-6 gap-6"
+      >
+        <article class="flex flex-col items-center mb-6 lg:mb-4">
+          <img
+            src="./assets/solar_balloon-broken.svg"
+            alt="Solar Balloon"
+            class="w-14 md:w-[5rem] lg:w-[3.5rem]"
+          />
+          <h4
+            class="font-syne font-semibold text-lg md:text-2xl lg:text-2xl text-center mt-2"
+          >
+            100% High Quality Product
+          </h4>
+          <p class="mt-1 text-sm md:text-xl lg:text-base">
+            We have option of pick up in store
+          </p>
+        </article>
+        <article class="flex flex-col items-center mb-6 lg:mb-4">
+          <img
+            src="./assets/solar_bag-heart-broken.svg"
+            alt="Solar Bag"
+            class="w-14 md:w-[5rem] lg:w-[3.5rem]"
+          />
+          <h4
+            class="font-syne font-semibold text-lg md:text-2xl lg:text-2xl text-center mt-2"
+          >
+            Free Shipping Charge
+          </h4>
+          <p class="mt-1 text-sm md:text-xl lg:text-base">
+            Inside City delivery within 5 days
+          </p>
+        </article>
+        <article class="flex flex-col items-center lg:mb-4">
+          <img
+            src="./assets/solar_adhesive-plaster-broken.svg"
+            alt="Solar Balloon"
+            class="w-14 md:w-16 lg:w-[3.5rem]"
+          />
+          <h4
+            class="font-syne font-semibold text-lg md:text-2xl lg:text-2xl text-center mt-2"
+          >
+            Money Back Guarantee
+          </h4>
+          <p class="mt-1 text-sm md:text-xl lg:text-base">
+            We will take return in some cases
+          </p>
+        </article>
+      </section>
+    </section>
+
+    <!-- About -->
+    <section
+      id="about"
+      class="lg:w-[90%] sm:w-[100%] md:w-[100%] mx-auto mb-16 lg:mt-8 lg:py-8"
+    >
+      <h2
+        class="text-3xl md:text-3xl lg:text-5xl font-syne font-bold md:font-extrabold lg:font-bold self-stretch leading-[2rem] lg:leading-[2rem] text-center"
+      >
+        Why To Use Supple
+      </h2>
+      <p class="mt-3 lg:mt-4 text-sm md:text-xl lg:text-base">
+        Suspen dise tempus oncu enim pellen teste pretium.
+      </p>
+      <section
+        class="sm:w-[100%] md:w-[100%] mx-auto flex flex-col lg:flex-row md:flex-col sm:justify-center md:justify-center lg:justify-between items-center px-6 lg:px-12 md-px-6 mt-6 gap-6"
+      >
+        <div class="w-full lg:w-1/3 md:w-full">
+          <article class="flex justify-between mb-6 md:mb-8">
+            <div class="mr-3 md:mr-4 lg:mr-4">
+              <h3
+                class="text-xl md:text-3xl lg:text-2xl font-syne font-semibold text-right"
+              >
+                Feature One
+              </h3>
+              <p
+                class="text-right text-sm md:text-xl lg:text-base line-clamp-3"
+              >
+                Lorem ipsum dolor sit amet consectetur. Molestie aenean enim
+                massa magna.
+              </p>
+            </div>
+            <div>
+              <img
+                src="./assets/solar_bicycling-round-outline.svg"
+                alt="solar bicycle"
+                class="w-[6rem] relative top-2"
+              />
+            </div>
+          </article>
+
+          <article class="flex justify-between mb-6 md:mb-8">
+            <div class="mr-3 md:mr-4 lg:mr-4">
+              <h3
+                class="text-xl md:text-3xl lg:text-2xl font-syne font-semibold text-right"
+              >
+                Feature Two
+              </h3>
+              <p
+                class="text-right text-sm md:text-xl lg:text-base line-clamp-3"
+              >
+                Nisl vel porttitor feugiat ornare mollis ac. Dignissim amet
+                feugiat vivamus urna.
+              </p>
+            </div>
+            <div>
+              <img
+                src="./assets/solar_bolt-outline.svg"
+                alt="solar bolt"
+                class="w-[6rem] relative top-2"
+              />
+            </div>
+          </article>
+
+          <article class="flex justify-between mb-6 md:mb-8">
+            <div class="mr-3 md:mr-4 lg:mr-4">
+              <h3
+                class="text-xl md:text-3xl lg:text-2xl font-syne font-semibold text-right"
+              >
+                Feature Three
+              </h3>
+              <p
+                class="text-right text-sm md:text-xl lg:text-base line-clamp-3"
+              >
+                Urna posuere egestas nunc et sit vel. Nam cursus interdum urna
+                rutrum ac elit ut.
+              </p>
+            </div>
+            <div>
+              <img
+                src="./assets/solar_bone-outline.svg"
+                alt="solar bone"
+                class="w-[6rem] relative top-2"
+              />
+            </div>
+          </article>
+        </div>
+
+        <div class="w-full md:w-full lg:w-1/3">
+          <article class="self-center">
+            <img
+              src="./assets/chu-gummies-CxvVDA85TPs-unsplash1.png"
+              alt="chu gummies"
+              class="my-6 md:my-10 lg:my-0"
+            />
+          </article>
+        </div>
+
+        <div class="w-full md:w-full lg:w-1/3">
+          <article class="flex justify-between mb-6 md:mb-8">
+            <div>
+              <img
+                src="./assets/solar_bottle-outline.svg"
+                alt="solar bottle"
+                class="w-[6.5rem] relative top-2"
+              />
+            </div>
+            <div class="ml-3 md:ml-4 lg:ml-4">
+              <h3
+                class="text-xl md:text-3xl lg:text-2xl font-syne font-semibold text-left"
+              >
+                Feature Four
+              </h3>
+              <p class="text-left text-sm md:text-xl lg:text-base line-clamp-3">
+                Neque aliquam risus ut gravida commodo nec integer viverra. Id
+                sit bibendum mi.
+              </p>
+            </div>
+          </article>
+
+          <article class="flex justify-between mb-6 md:mb-8">
+            <div>
+              <img
+                src="./assets/solar_cup-paper-outline.svg"
+                alt="solar cup paper"
+                class="w-[6rem] relative top-2"
+              />
+            </div>
+            <div class="ml-3 md:ml-4 lg:ml-4">
+              <h3
+                class="text-xl md:text-3xl lg:text-2xl font-syne font-semibold text-left"
+              >
+                Feature Five
+              </h3>
+              <p class="text-left text-sm md:text-xl lg:text-base line-clamp-3">
+                In nulla laoreet amet platea feugiat purus at consequat orci.
+                Velit in enim ac eu massa.
+              </p>
+            </div>
+          </article>
+
+          <article class="flex justify-between mb-6">
+            <div>
+              <img
+                src="./assets/solar_flame-outline.svg"
+                alt="solar flame"
+                class="w-[6rem] relative top-2"
+              />
+            </div>
+            <div class="ml-3 md:ml-4 lg:ml-4">
+              <h3
+                class="text-xl md:text-3xl lg:text-2xl font-syne font-semibold text-left"
+              >
+                Feature Six
+              </h3>
+              <p class="text-left text-sm md:text-xl lg:text-base line-clamp-3">
+                Velit sed sem scelerisque gravida ornare enim. Venenatis
+                pharetra orci eu morbi.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </section>
+
+    <!-- Reviews -->
+    <section
+      id="reviews"
+      class="lg:w-[90%] sm:w-[100%] md:w-[100%] mx-auto mb-16 lg:py-8 flex flex-col justify-center items-center"
+    >
+      <h2
+        class="text-3xl md:text-3xl lg:text-5xl font-syne font-bold md:font-extrabold lg:font-bold self-stretch leading-[2rem] lg:leading-[2rem] text-center"
+      >
+        Customer’s Reviews
+      </h2>
+      <section
+        class="w-full md:w-[100%] mx-auto flex flex-col lg:flex-row md:flex-col sm:justify-center md:justify-center lg:justify-between items-center px-6 lg:px-12 md-px-6 mt-4 gap-3"
+      >
+        <article
+          class="flex flex-col justify-center items-center p-0 lg:py-3 lg:px-2 h-[12rem] md:h-[13rem] lg:h-[20rem] hover:bg-n-8 lg:hover:-translate-y-3 ase-in-out duration-300"
+        >
+          <h3
+            class="text-xl md:text-3xl lg:text-2xl font-syne font-semibold text-center"
+          >
+            Kevin H.
+          </h3>
+          <p class="sm:text-xs md:text-xl lg:text-sm">8/20/2023</p>
+          <p
+            class="text-sm md:text-xl lg:text-base my-3 line-clamp-[7] lg:line-clamp-[7]"
+          >
+            “Malesuada et ut vitae eget. Leo viverra fringilla faucibus proin
+            lacinia ornare amet. Aliquam mi eros dapibus pulvinar.”
+          </p>
+          <img src="./assets/Reviews.svg" alt="review" class="w-[6rem]" />
+        </article>
+        <article
+          class="flex flex-col justify-center items-center p-0 lg:py-3 lg:px-2 h-[12rem] md:h-[13rem] lg:h-[20rem] hover:bg-n-8 lg:hover:-translate-y-3 ase-in-out duration-300"
+        >
+          <h3
+            class="text-xl md:text-3xl lg:text-2xl font-syne font-semibold text-center"
+          >
+            David W.
+          </h3>
+          <p class="sm:text-xs md:text-xl lg:text-sm">8/13/2024</p>
+          <p
+            class="text-sm md:text-xl lg:text-base my-3 line-clamp-[7] lg:line-clamp-[7]"
+          >
+            “Dolor sit amet consectetur. Malesuada et ut vitae eget suscipit
+            arcueget. Leo viverra fringilla faucibus proin lacinia ornare.”
+          </p>
+          <img src="./assets/Reviews.svg" alt="review" class="w-[6rem]" />
+        </article>
+        <article
+          class="flex flex-col justify-center items-center p-0 lg:py-3 lg:px-2 h-[12rem] md:h-[13rem] lg:h-[20rem] hover:bg-n-8 lg:hover:-translate-y-3 ase-in-out duration-300"
+        >
+          <h3
+            class="text-xl md:text-3xl lg:text-2xl font-syne font-semibold text-center"
+          >
+            Olivia L.
+          </h3>
+          <p class="sm:text-xs md:text-xl lg:text-sm">8/13/2024</p>
+          <p
+            class="text-sm md:text-xl lg:text-base my-3 line-clamp-[7] lg:line-clamp-[7]"
+          >
+            “Leo viverra fringilla faucibus proin lacinia ornare amet. Aliquam
+            mi eroseget suscipit arcu dapibus pulvinar.”
+          </p>
+          <img src="./assets/Reviews.svg" alt="review" class="w-[6rem]" />
+        </article>
+        <article
+          class="flex flex-col justify-center items-center p-0 lg:py-3 lg:px-2 h-[12rem] md:h-[13rem] lg:h-[20rem] hover:bg-n-8 lg:hover:-translate-y-3 ase-in-out duration-300"
+        >
+          <h3
+            class="text-xl md:text-3xl lg:text-2xl font-syne font-semibold text-center"
+          >
+            Adam S.
+          </h3>
+          <p class="sm:text-xs md:text-xl lg:text-sm">8/13/2024</p>
+          <p
+            class="text-sm md:text-xl lg:text-base my-3 line-clamp-[7] lg:line-clamp-[7]"
+          >
+            “Et ut vitae eget. Leo viverra fringilla fau eget suscipit arcucibus
+            proin lacinia ornare amet. Aliquam mi eros dapibus pulvinar.”
+          </p>
+          <img src="./assets/Reviews.svg" alt="review" class="w-[6rem]" />
+        </article>
+        <article
+          class="flex flex-col justify-center items-center p-0 lg:py-3 lg:px-2 h-[12rem] md:h-[13rem] lg:h-[20rem] hover:bg-n-8 lg:hover:-translate-y-3 ase-in-out duration-300"
+        >
+          <h3
+            class="text-xl md:text-3xl lg:text-2xl font-syne font-semibold text-center"
+          >
+            Emma T.
+          </h3>
+          <p class="sm:text-xs md:text-xl lg:text-sm">8/13/2024</p>
+          <p
+            class="text-sm md:text-xl lg:text-base my-3 line-clamp-[7] lg:line-clamp-[7]"
+          >
+            “Amet non dolor pellentesque feugiat ac nec ac in. Dictumst turpis
+            natoque eget suscipit arcu. Eu nunc quis consectetur.”
+          </p>
+          <img src="./assets/Reviews.svg" alt="review" class="w-[6rem]" />
+        </article>
+        <article
+          class="flex flex-col justify-center items-center p-0 lg:py-3 lg:px-2 h-[12rem] md:h-[13rem] lg:h-[20rem] hover:bg-n-8 lg:hover:-translate-y-3 ase-in-out duration-300"
+        >
+          <h3
+            class="text-xl md:text-3xl lg:text-2xl font-syne font-semibold text-center"
+          >
+            Rachel B.
+          </h3>
+          <p class="sm:text-xs md:text-xl lg:text-sm">8/13/2024</p>
+          <p
+            class="text-sm md:text-xl my-3 line-clamp-[7] lg:text-base lg:line-clamp-[7]"
+          >
+            “Adipiscing dictum adipiscing arcu venenatis dolor adipiscing.
+            Iaculis mauris tellus morbi.”
+          </p>
+          <img src="./assets/Reviews.svg" alt="review" class="w-[6rem]" />
+        </article>
+      </section>
+      <img
+        src="./assets/Slider.svg"
+        alt="Slider"
+        class="hidden lg:flex lg:w-[3rem] lg:mt-6"
+      />
+    </section>
+
+    <!-- Video -->
+    <section
+      id="video"
+      class="lg:w-[90%] sm:w-[100%] md:w-[100%] mx-auto mb-20 lg:py-8 px-6 lg:px-12 md-px-6 relative"
+    >
+      <div class="">
+        <img src="./assets/Rectangle-452.png" alt="video" class="" />
+        <img
+          src="./assets/Video.png"
+          alt="play"
+          class="absolute left-0 top-0 bottom-0"
+        />
+      </div>
+    </section>
+
+    <!-- Product -->
+    <section
+      id="product"
+      class="lg:w-[90%] sm:w-[100%] md:w-[100%] mx-auto mb-20 lg:py-8 px-6 lg:px-12 md-px-6"
+    >
+      <h2
+        class="text-3xl md:text-3xl lg:text-5xl font-syne font-bold md:font-extrabold lg:font-bold self-stretch leading-[2rem] lg:leading-[2rem] text-center"
+      >
+        Order Our Product
+      </h2>
+      <p class="mt-3 lg:mt-4 text-sm md:text-xl lg:text-base">
+        This is the only way to get this product in discount.
+      </p>
+      <section
+        class="flex flex-col lg:justify-between items-center lg:flex-row md:flex-col"
+      >
+        <article
+          class="w-full lg:w-3/6 flex flex-col p-0 md:mt-8 mt-6 mb-10 lg:mr-12"
+        >
+          <img
+            src="./assets/pexels-suzy-hazelwood-2536965-2.png"
+            alt=""
+            class=""
+          />
+          <div class="flex justify-start mt-4 gap-3">
+            <img
+              src="./assets/pexels-suzy-hazelwood-2536965-3.png"
+              alt=""
+              class="size-20 lg:w-[7rem]"
+            />
+            <img
+              src="./assets/pexels-suzy-hazelwood-2536965-4.png"
+              alt=""
+              class="size-20 lg:w-[7rem]"
+            />
+            <img
+              src="./assets/pexels-suzy-hazelwood-2536965-5.png"
+              alt=""
+              class="size-20 lg:w-[7rem]"
+            />
+          </div>
+        </article>
+        <article class="w-full lg:w-3/6 flex flex-col p-0 md:mt-8 items-start">
+          <img src="./assets/Reviews.svg" alt="" class="w-[6rem]" />
+          <h3 class="self-stretch font-syne font-normal text-4xl my-3">
+            Supplement Name
+          </h3>
+          <p class="text-start inline-block justify-center">
+            <span class="text-3xl font-semibold text-color-2">$99.99 </span
+            ><span class="line-through text-lg">$190</span>
+          </p>
+          <p class="text-sm lg:text-base text-start mt-5 mb-2 leading-8">
+            Tempus uspen dise oncu enim pellen tesque este pretium in neque,
+            elit morbi sagittis lorem habi mattis empus oncu enim pellen.
+          </p>
+          <button
+            class="bg-color-2 text-xs md:text-lg lg:text-base text-n-10 py-4 px-8 md:px-10 my-5 rounded-full uppercase hover:bg-transparent hover:border-color-2 hover:border-4 hover:text-n-1 outline-none focus:ring-4 focus:outline-none active:bg-color-2 active:text-n-1"
+          >
+            Purchase
+          </button>
+          <hr class="border-t-1 border-n-7 w-full mx-auto my-4 lg:my-6" />
+          <div class="flex justify-between mt-3 cursor-pointer">
+            <h3
+              class="tab-links text-xl md:text-3xl lg:text-2xl font-syne font-semibold hover:text-color-2"
+              onclick="opentab('description', event)"
+            >
+              Description
+            </h3>
+            <h3
+              class="tab-links text-xl md:text-3xl lg:text-2xl font-syne font-semibold ml-8 hover:text-color-2"
+              onclick="opentab('reviews', event)"
+            >
+              Reviews
+              <!--(2)-->
+            </h3>
+          </div>
+
+          <div
+            class="mt-4 lg:mt-6 block tab-contents active-tab"
+            id="description"
+          >
+            <p class="text-start text-sm lg:text-base leading-8 line-clamp-3">
+              Dise tempus oncu enim pellen tesque este pretium in neque, elit
+              morbi sagittis lorem habi mattis empus oncu enim pellen. Pellen
+              tesque este pretium in neque, elit morbi sagittis lorem habi
+              mattis empus.
+            </p>
+          </div>
+          <!--div class="mt-6 flex-none tab-contents hidden" id="reviews">
+            <ul class="list-none">
+              <li>
+                <span class="text-2xl">Rachel B.</span><br />“Adipiscing dictum
+                adipiscing arcu venenatis dolor adipiscing. Iaculis mauris
+                tellus morbi.”
+                <br />
+                <img
+                  src="./assets/Reviews.svg"
+                  alt="review"
+                  class="w-[6rem] my-3"
+                />
+              </li>
+              <br />
+              <li>
+                <span class="text-2xl">Emma T.</span><br />“Amet non dolor
+                pellentesque feugiat ac nec ac in. Dictumst turpis natoque eget
+                suscipit arcu. Eu nunc quis consectetur.” <br />
+                <img
+                  src="./assets/Reviews.svg"
+                  alt="review"
+                  class="w-[6rem] my-3"
+                />
+              </li>
+            </ul>
+          </div-->
+        </article>
+      </section>
+    </section>
+
+    <!-- Faqs -->
+    <section
+      class="bg-stroke-1 w-screen md:w-screen lg:w-screen lg:py-8 py-12 h-fit mb-20"
+    >
+      <section
+        id="faqs"
+        class="lg:w-[90%] sm:w-[100%] md:w-[100%] mb-20 px-6 lg:px-12 md-px-6 my-20 mx-auto"
+      >
+        <h2
+          class="text-3xl md:text-3xl lg:text-5xl font-syne font-bold md:font-extrabold lg:font-bold self-stretch leading-[2rem] lg:leading-[2rem] text-center"
+        >
+          FAQs
+        </h2>
+        <p class="mt-3 lg:mt-6 text-sm md:text-xl lg:text-base">
+          Frequently asked questions.
+        </p>
+        <section class="flex flex-col items-center mt-6 gap-3">
+          <article class="border border-n-8 w-full lg:w-[50rem] px-3">
+            <div class="flex justify-between items-center my-4">
+              <h3
+                class="text-xl md:text-3xl lg:text-2xl font-syne font-semibold text-left"
+              >
+                How this supplement works?
+              </h3>
+              <img src="./assets/mdi_minus.svg" alt="minus" class="">
+            </div>
+            <p
+              class="line-clamp-2 text-left pr-12 py-1 mb-4 lg:text-base leading-6 lg:leading-8"
+            >
+              Et nec ipsum tincidunt ut felis elementum proin eget dignissim
+              egestas quis velit maecenas magnis. Etiam faucibus et ultrices sit
+              aliquet ultrices.
+            </p>
+          </article>
+          <article class="border border-n-8 w-full lg:w-[50rem] px-3">
+            <div class="flex justify-between items-center my-4">
+              <h3
+                class="text-xl md:text-3xl lg:text-2xl font-syne font-semibold text-left"
+              >
+                Is there refund policy?
+              </h3>
+              <img src="./assets/mdi_plus.svg" alt="plus" class="">
+            </div>
+          </article>
+          <article class="border border-n-8 w-full lg:w-[50rem] px-3">
+            <div class="flex justify-between items-center my-4">
+              <h3
+                class="text-xl md:text-3xl lg:text-2xl font-syne font-semibold text-left"
+              >
+                How can i trust your supplements?
+              </h3>
+              <img src="./assets/mdi_plus.svg" alt="plus" class="">
+            </div>
+          </article>
+          <article class="border border-n-8 w-full lg:w-[50rem] px-3">
+            <div class="flex justify-between items-center my-4">
+              <h3
+                class="text-xl md:text-3xl lg:text-2xl font-syne font-semibold text-left"
+              >
+                Is there any side effects of this supplement?
+              </h3>
+              <img src="./assets/mdi_plus.svg" alt="plus" class="">
+            </div>
+          </article>
+          <article class="border border-n-8 w-full lg:w-[50rem] px-3">
+            <div class="flex justify-between items-center my-4">
+              <h3
+                class="text-xl md:text-3xl lg:text-2xl font-syne font-semibold text-left"
+              >
+                Is this helpful to gain muscles?
+              </h3>
+              <img src="./assets/mdi_plus.svg" alt="plus" class="">
+            </div>
+          </article>
+        </section>
+      </section>
+    </section>
+
+    <!-- Packages -->
+    <section
+      id="packages"
+      class="lg:w-[90%] sm:w-[100%] md:w-[100%] mx-auto mb-16 lg:mt-8 lg:py-8"
+    >
+      <h2
+        class="text-3xl md:text-3xl lg:text-5xl font-syne font-bold md:font-extrabold lg:font-bold self-stretch leading-[2rem] lg:leading-[2rem] text-center"
+      >
+        Choose Your Packages
+      </h2>
+      <p class="mt-3 lg:mt-4 text-sm md:text-xl lg:text-base">
+        Suspen dise tempus oncu enim pellen teste pretium.
+      </p>
+      <section
+        class="sm:w-[100%] md:w-[100%] mx-auto flex flex-col lg:flex-row md:flex-col sm:justify-center md:justify-center lg:justify-between items-center px-6 lg:px-12 md-px-6 mt-8 gap-6"
+      >
+        <div
+          class="w-full lg:w-1/3 md:w-full border border-n-8 py-14 flex flex-col justify-center items-center"
+        >
+          <h3
+            class="text-xl md:text-3xl lg:text-2xl font-syne font-medium text-left"
+          >
+            Pricing 1
+          </h3>
+          <p class="text-sm md:text-xl lg:text-base my-3">Monthly</p>
+          <p class="inline-block justify-center mb-5">
+            <span class="text-2xl font-semibold text-color-2">$60 </span
+            ><span class="text-lg">/ person</span>
+          </p>
+          <p class="text-sm lg:text-base leading-8">✓ Quisque rhoncus</p>
+          <p class="text-sm lg:text-base leading-8">✓ Lorem ipsum dolor</p>
+          <p class="text-sm lg:text-base leading-8">✓ Vivamus velit mir</p>
+          <p class="text-sm lg:text-base leading-8">✓ Velit mir</p>
+          <p class="text-sm lg:text-base leading-8">✓ Elit mir ivamus</p>
+          <button
+            class="bg-color-2 text-xs md:text-lg lg:text-base text-n-10 py-4 px-8 md:px-10 mt-[7.4rem] rounded-full uppercase hover:bg-transparent hover:border-color-2 hover:border-4 hover:text-n-1 outline-none focus:ring-4 focus:outline-none active:bg-color-2 active:text-n-1"
+          >
+            Buy Now
+          </button>
+        </div>
+
+        <div
+          class="w-full lg:w-1/3 md:w-full border border-n-8 py-14 flex flex-col justify-center items-center"
+        >
+          <h3
+            class="text-xl md:text-3xl lg:text-2xl font-syne font-medium text-left"
+          >
+            Pricing 2
+          </h3>
+          <p class="text-sm md:text-xl lg:text-base my-3">Yearly</p>
+          <p class="inline-block justify-center mb-5">
+            <span class="text-2xl font-semibold text-color-2">$90 </span
+            ><span class="text-lg">/ 6 person</span>
+          </p>
+          <p class="text-sm lg:text-base leading-8">✓ Quisque rhoncus</p>
+          <p class="text-sm lg:text-base leading-8">✓ Lorem ipsum dolor</p>
+          <p class="text-sm lg:text-base leading-8">✓ Vivamus velit mir</p>
+          <p class="text-sm lg:text-base leading-8">✓ Elit mir ivamus</p>
+          <p class="text-sm lg:text-base leading-8">✓ Lorem ipsum dolor</p>
+          <p class="text-sm lg:text-base leading-8">✓ Lorem ipsum</p>
+          <button
+            class="bg-color-2 text-xs md:text-lg lg:text-base text-n-10 py-4 px-8 md:px-10 mt-[8rem] rounded-full uppercase hover:bg-transparent hover:border-color-2 hover:border-4 hover:text-n-1 outline-none focus:ring-4 focus:outline-none active:bg-color-2 active:text-n-1"
+          >
+            Buy Now
+          </button>
+        </div>
+
+        <div
+          class="w-full lg:w-1/3 md:w-full border border-n-8 py-14 flex flex-col justify-center items-center"
+        >
+          <h3
+            class="text-xl md:text-3xl lg:text-2xl font-syne font-medium text-left"
+          >
+            Pricing 1
+          </h3>
+          <p class="text-sm md:text-xl lg:text-base my-3">Monthly</p>
+          <p class="inline-block justify-center mb-5">
+            <span class="text-2xl font-semibold text-color-2">$60 </span
+            ><span class="text-lg">/ person</span>
+          </p>
+          <p class="text-sm lg:text-base leading-8">✓ Quisque rhoncus</p>
+          <p class="text-sm lg:text-base leading-8">✓ Lorem ipsum dolor</p>
+          <p class="text-sm lg:text-base leading-8">✓ Vivamus velit mir</p>
+          <p class="text-sm lg:text-base leading-8">✓ It ir ivamus</p>
+          <p class="text-sm lg:text-base leading-8">✓ Ivamus mir vamus</p>
+          <p class="text-sm lg:text-base leading-8">✓ Quisque rhoncus</p>
+          <p class="text-sm lg:text-base leading-8">✓ lit mir iamus</p>
+          <button
+            class="bg-color-2 text-xs md:text-lg lg:text-base text-n-10 py-4 px-8 md:px-10 mt-14 rounded-full uppercase hover:bg-transparent hover:border-color-2 hover:border-4 hover:text-n-1 outline-none focus:ring-4 focus:outline-none active:bg-color-2 active:text-n-1"
+          >
+            Buy Now
+          </button>
+        </div>
+      </section>
+    </section>
+
+    <!-- Recommended -->
+    <section
+      class="lg:w-[90%] sm:w-[100%] md:w-[100%] mx-auto mb-16 lg:py-8 flex flex-col justify-center items-center"
+    >
+      <h2
+        class="text-3xl md:text-3xl lg:text-5xl font-syne font-bold md:font-extrabold lg:font-bold self-stretch leading-[2rem] lg:leading-[2rem] text-center"
+      >
+        Recommended By
+      </h2>
+      <p class="mt-3 lg:mt-4 text-sm md:text-xl lg:text-base">
+        Suspen dise tempus oncu enim pellen teste pretium.
+      </p>
+      <section
+        class="w-full md:w-[100%] mx-auto flex flex-col lg:flex-row md:flex-col justify-center md:justify-center lg:justify-between items-center px-6 lg:px-12 md-px-6 mt-12 gap-6"
+      >
+        <div
+          class="w-full lg:w-1/3 md:w-full mb-4 flex flex-col justify-center items-center"
+        >
+          <img src="./assets/Rectangle-315.png" alt="" class="" />
+          <h3
+            class="text-xl md:text-3xl lg:text-2xl font-syne font-medium mt-3 mb-1"
+          >
+            Kevin bryan
+          </h3>
+          <p class="text-sm md:text-xl lg:text-base">Cardio doctor</p>
+        </div>
+
+        <div
+          class="w-full lg:w-1/3 md:w-full mb-4 flex flex-col justify-center items-center"
+        >
+          <img src="./assets/Rectangle-314.png" alt="" class="" />
+          <h3
+            class="text-xl md:text-3xl lg:text-2xl font-syne font-medium mt-3 mb-1"
+          >
+            Jolly Garcia
+          </h3>
+          <p class="text-sm md:text-xl lg:text-base">Fitness coach</p>
+        </div>
+        <div
+          class="w-full lg:w-1/3 md:w-full mb-4 flex flex-col justify-center items-center"
+        >
+          <img src="./assets/Rectangle-313.png" alt="" class="" />
+          <h3
+            class="text-xl md:text-3xl lg:text-2xl font-syne font-medium mt-3 mb-1"
+          >
+            Onnel smith
+          </h3>
+          <p class="text-sm md:text-xl lg:text-base">Senior doctor</p>
+        </div>
+        <div
+          class="w-full lg:w-1/3 md:w-full mb-4 flex flex-col justify-center items-center"
+        >
+          <img src="./assets/Rectangle313.png" alt="" class="" />
+          <h3
+            class="text-xl md:text-3xl lg:text-2xl font-syne font-medium mt-3 mb-1"
+          >
+            daniel luis
+          </h3>
+          <p class="text-sm md:text-xl lg:text-base">Swimming coach</p>
+        </div>
+      </section>
+    </section>
+
+    <!-- Newsteller -->
+    <section
+      class="lg:w-[90%] sm:w-[100%] md:w-[100%] mb-20 px-6 lg:px-12 md-px-6 my-20 mx-auto"
+    >
+      <h2
+        class="text-3xl md:text-3xl lg:text-5xl font-syne font-bold md:font-extrabold lg:font-bold self-stretch leading-[2rem] lg:leading-[2rem] text-center"
+      >
+        Sign Up Newsletter
+      </h2>
+      <p class="mt-3 lg:mt-4 text-sm md:text-xl lg:text-base">
+        Suspen dise tempus oncu enim pellen teste pretium.
+      </p>
+      <div
+        class="w-full lg:w-[40rem] bg-transparent mx-auto flex justify-center mt-10 items-center border-2 border-n-8 rounded-full"
+      >
+        <input
+          type="email"
+          name="email"
+          placeholder="Write your email address..."
+          required
+          class="w-full text-n-7 text-xs pl-3 lg:pl-6 outline-none focus:outline-none"
+        />
+
+        <button
+          class="bg-color-2 text-xs md:text-lg lg:text-base text-n-10 py-4 px-8 md:px-10 rounded-full uppercase hover:bg-transparent hover:border-color-2 hover:border-4 hover:text-n-1 outline-none focus:ring-4 focus:outline-none active:bg-color-2 active:text-n-1"
+        >
+          Subscribe
+        </button>
+      </div>
+    </section>
+
+    <!-- Patners -->
+    <section
+      class="lg:w-[90%] w-full md:w-[100%] mx-auto mb-20 lg:py-8 px-6 lg:px-12 md-px-6 flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-4"
+    >
+      <a href="#" class="fill-current cursor-pointer hover:text-color-2"
+        ><img src="./assets/Lifetrack.svg" alt="Lifetrack"
+      /></a>
+      <a href="#" class="cursor-pointer hover:text-color-2"
+        ><img src="./assets/Landing.svg" alt="landing"
+      /></a>
+      <a href="#" class="cursor-pointer hover:text-color-2"
+        ><img src="./assets/Happen.svg" alt="Happen"
+      /></a>
+      <a href="#" class="cursor-pointer hover:text-color-2"
+        ><img src="./assets/Fitluv.svg" alt="Fitluv"
+      /></a>
+      <a href="#" class="cursor-pointer hover:text-color-2"
+        ><img src="./assets/drastic.svg" alt="drastic"
+      /></a>
+    </section>
+
+    <!-- Contacts -->
+    <section
+      id="contacts"
+      class="lg:w-[90%] w-full md:w-[100%] mx-auto mb-16 lg:py-8 flex flex-col lg:flex-row md:flex-col justify-center md:justify-center lg:justify-between items-center px-6 lg:px-12 md-px-6 mt-12 gap-3 lg:gap-6"
+    >
+      <div
+        class="w-full lg:w-1/3 md:w-full py-2 flex flex-col items-start lg:h-[20rem] "
+      >
+        <img src="./assets/Supple..svg" alt="supple" class="mb-3" />
+        <p class="text-start text-sm lg:text-base leading-8 my-4 cursor-pointer hover:text-color-2 hover:translate-x-2 ase-in-out duration-300">
+          Suspen dise tempus oncu enim pellen teste pretium.
+        </p>
+        <div class="flex justiify-center items-start gap-3 lg:gap-3 mt-2">
+          <a href="#"
+            ><ion-icon
+              name="logo-facebook"
+              class="text-2xl cursor-pointer hover:text-color-2 size-6 border border-n-8 rounded-lg p-1 hover:-translate-y-2 ase-in-out duration-300"
+            ></ion-icon
+          ></a>
+          <a href="#"
+            ><ion-icon
+              name="logo-instagram"
+              class="text-2xl cursor-pointer hover:text-color-2 size-6 border border-n-8 rounded-lg p-1 hover:-translate-y-2 ase-in-out duration-300"
+            ></ion-icon
+          ></a>
+          <a href="#"
+            ><ion-icon
+              name="logo-twitter"
+              class="text-2xl cursor-pointer hover:text-color-2 size-6 border border-n-8 rounded-lg p-1 hover:-translate-y-2 ase-in-out duration-300"
+            ></ion-icon
+          ></a>
+          <a href="#"
+            ><ion-icon
+              name="logo-linkedin"
+              class="text-2xl cursor-pointer hover:text-color-2 size-6 border border-n-8 rounded-lg p-1 hover:-translate-y-2 ase-in-out duration-300"
+            ></ion-icon
+          ></a>
+          <a href="#"
+            ><ion-icon
+              name="logo-youtube"
+              class="text-2xl cursor-pointer hover:text-color-2 size-6 border border-n-8 rounded-lg p-1 hover:-translate-y-2 ase-in-out duration-300"
+            ></ion-icon
+          ></a>
+        </div>
+      </div>
+
+      <div
+        class="w-full lg:w-1/3 md:w-full py-2 lg:pl-12 flex flex-col items-start lg:h-[20rem]"
+      >
+        <h3
+          class="text-xl md:text-3xl lg:text-2xl font-syne font-medium mb-4 text-start"
+        >
+          Links
+        </h3>
+        <a
+          href="#about"
+          class="cursor-pointer hover:text-color-2 hover:translate-x-2 ase-in-out duration-300 my-1 uppercase text-sm text-start"
+          >About</a
+        >
+        <a
+          href="#"
+          class="cursor-pointer hover:text-color-2 hover:translate-x-2 ase-in-out duration-300 my-1 uppercase text-sm text-start"
+          >Privacy</a
+        >
+        <a
+          href="#"
+          class="cursor-pointer hover:text-color-2 hover:translate-x-2 ase-in-out duration-300 my-1 uppercase text-sm text-start"
+          >Return</a
+        >
+        <a
+          href="#"
+          class="cursor-pointer hover:text-color-2 hover:translate-x-2 ase-in-out duration-300 my-1 uppercase text-sm text-start"
+          >Terms</a
+        >
+      </div>
+
+      <div
+        class="w-full lg:w-1/3 md:w-full py-2 flex flex-col items-start lg:h-[20rem]"
+      >
+        <h3 class="text-xl md:text-3xl lg:text-2xl font-syne font-medium mb-4">
+          Contact
+        </h3>
+        <p
+          class="text-start text-sm text-n-1 lg:text-base leading-8 my-1 hover:text-color-2 hover:translate-x-2 ase-in-out duration-300"
+        >
+          123 456 7891
+        </p>
+        <p
+          class="text-start text-sm text-n-1 lg:text-base leading-8 my-1 hover:text-color-2 hover:translate-x-2 ase-in-out duration-300"
+        >
+          youremail@gmail.com
+        </p>
+        <p
+          class="text-start text-sm text-n-1 lg:text-base leading-8 my-1 hover:text-color-2 hover:translate-x-2 ase-in-out duration-300"
+        >
+          Phoenix, Arizona 947 Dogwood Road
+        </p>
+      </div>
+
+      <div class="w-full lg:w-1/3 md:w-full py-2 flex flex-col items-start lg:h-[20rem]">
+        <h3 class="text-xl md:text-3xl lg:text-2xl font-syne font-medium mb-4">
+          Send your message
+        <form action="" >
+          <div class="flex flex-col lg:flex-row justify-between items-center">
+            <input
+              type="text"
+              name="name"
+              placeholder="Full Name*"
+              required
+              class="text-n-1 text-sm py-3 pl-1.5 pr-20 lg:pr-5 outline-none focus:outline-none mt-3 lg:my-4 lg:mr-2 border-2 border-n-8"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email*"
+              required
+              class="text-n-1 text-sm py-3 pl-1.5 pr-20 lg:pr-5 outline-none focus:outline-none my-3 lg:my-4 lg:ml-2 border-2 border-n-8"
+            />
+          </div>
+          <textarea
+            name="message"
+            id=""
+            cols="10"
+            rows="5"
+            placeholder="Your Message*"
+            required
+            class="w-full text-n-1 text-sm pl-1.5 outline-none focus:outline-none mb-2 border-2 border-n-8"
+          ></textarea>
+          <button
+            class="bg-color-2 text-xs md:text-lg lg:text-base text-n-10 py-4 px-8 md:px-10 mt-2 rounded-full uppercase hover:bg-transparent hover:border-color-2 hover:border-4 hover:text-n-1 outline-none focus:ring-4 focus:outline-none active:bg-color-2 active:text-n-1"
+          >
+            Send
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="border-t-2 border-n-5">
+      <p class="py-5 text-n-1 font-normal lg:text-base">© 2024 Supple. Designed by <span class="text-color-2 uppercase font-bold">OMOWUNMI</span></p>
+    </section>
+
+    <script src="./script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

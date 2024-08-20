@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-syne: "Syne", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+  color-scheme: dark;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-base text-n-1;
+  }
+  a {
+    @apply no-underline text-sm md:text-xl lg:text-sm text-n-1 font-montserrat hover:text-color-2 focus:text-color-2;
+  }
+  p {
+    @apply self-stretch font-montserrat text-sm text-center font-light text-n-4 mt-3;
+  }
+}
+
+@layer components {
+  .navbar {
+    @apply flex justify-between items-center space-x-3;
+  }
+  .img {
+    @apply fill-current hover:text-color-2;
+  }
+}
