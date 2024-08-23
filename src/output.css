@@ -936,6 +936,30 @@ p{
   margin-top: 8rem;
 }
 
+.mt-\[8\.3rem\]{
+  margin-top: 8.3rem;
+}
+
+.mt-\[8\.5rem\]{
+  margin-top: 8.5rem;
+}
+
+.mt-\[9rem\]{
+  margin-top: 9rem;
+}
+
+.mt-16{
+  margin-top: 4rem;
+}
+
+.mt-20{
+  margin-top: 5rem;
+}
+
+.mt-\[4\.5rem\]{
+  margin-top: 4.5rem;
+}
+
 .box-border{
   box-sizing: border-box;
 }
