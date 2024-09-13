@@ -1,5 +1,7 @@
 # Supple.
 
+Supple is a modern, responsive web project designed to provide a sleek and user-friendly interface. This project showcases a clean design and interactive features, built to demonstrate front-end development skills using Tailwind CSS and JavaScript.
+
 ## Table of contents
 
 - [Overview](#overview)
@@ -18,41 +20,24 @@
 
 ### The challenge
 
-Users should be able to:
-
-- See hover and focus states for all interactive elements on the page
+- Using tailwind CSS to style the project and make it responsive.
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](./src/assets/supple-screenshort.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://omowunmikamil.github.io/Supple/)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
+- Tailwind CSS
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- JavaScript
 
 ### What I learned
 
@@ -61,48 +46,144 @@ Use this section to recap over some of your major learnings while working throug
 To see how you can add code snippets, see below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<section
+  class="bg-stroke-1 w-screen md:w-screen lg:w-screen lg:py-8 py-12 h-fit mb-20"
+>
+  <section
+    id="faqs"
+    class="lg:w-[90%] sm:w-[100%] md:w-[100%] mb-20 px-6 lg:px-12 md-px-6 my-20 mx-auto"
+  >
+    <h2
+      class="text-3xl md:text-3xl lg:text-5xl font-syne font-bold md:font-extrabold lg:font-bold self-stretch leading-[2rem] lg:leading-[2rem] text-center"
+    >
+      FAQs
+    </h2>
+    <p class="mt-3 lg:mt-6 text-sm md:text-xl lg:text-base">
+      Frequently asked questions.
+    </p>
+    <section class="flex flex-col items-center mt-6 gap-3">
+      <article class="border border-n-8 w-full lg:w-[50rem] px-3">
+        <div class="flex justify-between items-center my-4">
+          <h3
+            class="text-xl md:text-3xl lg:text-2xl font-syne font-semibold text-left"
+          >
+            How this supplement works?
+          </h3>
+          <img src="./src/assets/mdi_minus.svg" alt="minus" class="" />
+        </div>
+        <p
+          class="line-clamp-2 text-left pr-12 py-1 mb-4 lg:text-base leading-6 lg:leading-8"
+        >
+          Et nec ipsum tincidunt ut felis elementum proin eget dignissim egestas
+          quis velit maecenas magnis. Etiam faucibus et ultrices sit aliquet
+          ultrices.
+        </p>
+      </article>
+      <article class="border border-n-8 w-full lg:w-[50rem] px-3">
+        <div class="flex justify-between items-center my-4">
+          <h3
+            class="text-xl md:text-3xl lg:text-2xl font-syne font-semibold text-left"
+          >
+            Is there refund policy?
+          </h3>
+          <img src="./src/assets/mdi_plus.svg" alt="plus" class="" />
+        </div>
+      </article>
+      <article class="border border-n-8 w-full lg:w-[50rem] px-3">
+        <div class="flex justify-between items-center my-4">
+          <h3
+            class="text-xl md:text-3xl lg:text-2xl font-syne font-semibold text-left"
+          >
+            How can i trust your supplements?
+          </h3>
+          <img src="./src/assets/mdi_plus.svg" alt="plus" class="" />
+        </div>
+      </article>
+      <article class="border border-n-8 w-full lg:w-[50rem] px-3">
+        <div class="flex justify-between items-center my-4">
+          <h3
+            class="text-xl md:text-3xl lg:text-2xl font-syne font-semibold text-left"
+          >
+            Is there any side effects of this supplement?
+          </h3>
+          <img src="./src/assets/mdi_plus.svg" alt="plus" class="" />
+        </div>
+      </article>
+      <article class="border border-n-8 w-full lg:w-[50rem] px-3">
+        <div class="flex justify-between items-center my-4">
+          <h3
+            class="text-xl md:text-3xl lg:text-2xl font-syne font-semibold text-left"
+          >
+            Is this helpful to gain muscles?
+          </h3>
+          <img src="./src/assets/mdi_plus.svg" alt="plus" class="" />
+        </div>
+      </article>
+    </section>
+  </section>
+</section>
 ```
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+:root {
+  --font-syne: "Syne", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+  color-scheme: dark;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-base text-n-1;
+  }
+  a {
+    @apply no-underline text-sm md:text-xl lg:text-sm text-n-1 font-montserrat hover:text-color-2 focus:text-color-2;
+  }
+  p {
+    @apply self-stretch font-montserrat text-sm text-center font-light text-n-4 mt-3;
+  }
+}
+
+@layer components {
+  .navbar {
+    @apply flex justify-between items-center space-x-3;
+  }
+  .img {
+    @apply fill-current hover:text-color-2;
+  }
 }
 ```
 
 ```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
+function onToggleMenu(e) {
+  if (e.name === "menu") {
+    e.name = "close";
+    navLinks.classList.add("top-[9%]");
+    navLinks.classList.remove("top-[-100%]");
+  } else {
+    e.name = "menu";
+    navLinks.classList.add("top-[-100%]");
+    navLinks.classList.remove("top-[9%]");
+  }
+}
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+- All screen responsiveness
+- Tailwind transformation and animation
+- Screen blur
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Templates jungle](https://templatesjungle.com/) - This site provides a lot of free templates that can be used for projects.
+- [Tailwind CSS](https://tailwindcss.com/) - Tailwind CSS is a utility-first CSS framework for rapidly building custom designs.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Website - [Visit my Portfolio Website](<[https://omowunmikamil.tech](https://omowunmi-kamiludeen.netlify.app/)>)
+- Linkedin - [Omowunmi Kamiludeen](https://www.linkedin.com/in/omowunmi-kamiludeen/)
+- Twitter - [Browser_Nerd](https://www.twitter.com/@Browser_Nerd)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- [Templates jungle](https://templatesjungle.com/)
