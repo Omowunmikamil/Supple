@@ -180,7 +180,7 @@ function onToggleMenu(e) {
 
 ## Author
 
-- Website - [Visit my Portfolio Website](<[https://omowunmikamil.tech](https://omowunmi-kamiludeen.netlify.app/)>)
+- Website - [Visit my Portfolio Website](https://omowunmi-kamiludeen.netlify.app/)
 - Linkedin - [Omowunmi Kamiludeen](https://www.linkedin.com/in/omowunmi-kamiludeen/)
 - Twitter - [Browser_Nerd](https://www.twitter.com/@Browser_Nerd)
 
